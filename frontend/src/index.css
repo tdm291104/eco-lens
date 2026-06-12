@@ -1,0 +1,95 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-ink-950: #050907;
+  --color-ink-900: #0a130f;
+  --color-ink-800: #0f1c17;
+  --color-ink-700: #17281f;
+  --color-ink-600: #233a2d;
+  --color-ink-500: #345244;
+
+  --color-lime: #b6ff4d;
+  --color-lime-soft: #d9ffa8;
+  --color-emerald: #34d399;
+  --color-hazard: #ff6157;
+  --color-amber: #ffc247;
+  --color-mist: #9fb8ac;
+  --color-paper: #eaf6ee;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font-sans);
+    background-color: var(--color-ink-950);
+    color: var(--color-paper);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .bg-grain {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .bg-grain::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .scanlines {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgba(182, 255, 77, 0.025) 0px,
+      rgba(182, 255, 77, 0.025) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  }
+
+  .text-glow {
+    text-shadow: 0 0 18px rgba(182, 255, 77, 0.45);
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: var(--color-ink-600);
+    border-radius: 999px;
+  }
+}
+
+@keyframes blink-caret {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.caret {
+  animation: blink-caret 0.85s step-end infinite;
+}

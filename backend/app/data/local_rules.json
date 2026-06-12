@@ -1,0 +1,136 @@
+{
+  "rules_by_city": {
+    "TP. Hồ Chí Minh": {
+      "Rác tái chế": {
+        "bin_color": "Thùng màu vàng",
+        "bin_color_en": "Yellow bin",
+        "collection_day": "Thứ 3 và Thứ 6 hàng tuần",
+        "collection_day_en": "Every Tuesday and Friday",
+        "notes": "Rửa sạch, làm khô và để rời trước khi bỏ vào thùng tái chế.",
+        "notes_en": "Rinse, dry and keep items loose before putting them in the recycling bin."
+      },
+      "Rác hữu cơ": {
+        "bin_color": "Thùng màu xanh lá",
+        "bin_color_en": "Green bin",
+        "collection_day": "Hàng ngày",
+        "collection_day_en": "Daily",
+        "notes": "Không để lẫn túi nhựa hoặc rác tái chế vào rác hữu cơ.",
+        "notes_en": "Do not mix plastic bags or recyclables into organic waste."
+      },
+      "Rác nguy hại": {
+        "bin_color": "Thùng màu đỏ / điểm thu gom riêng",
+        "bin_color_en": "Red bin / dedicated collection point",
+        "collection_day": "Chủ nhật đầu tiên mỗi tháng",
+        "collection_day_en": "First Sunday of every month",
+        "notes": "Không bỏ chung với rác sinh hoạt; mang đến điểm thu gom chỉ định.",
+        "notes_en": "Do not mix with household waste; bring to the designated collection point."
+      },
+      "Rác thông thường": {
+        "bin_color": "Thùng màu xám",
+        "bin_color_en": "Gray bin",
+        "collection_day": "Hàng ngày",
+        "collection_day_en": "Daily",
+        "notes": "Đóng gói gọn gàng trước khi bỏ vào thùng.",
+        "notes_en": "Pack neatly before placing it in the bin."
+      }
+    },
+    "Hà Nội": {
+      "Rác tái chế": {
+        "bin_color": "Thùng/túi màu trắng",
+        "bin_color_en": "White bin/bag",
+        "collection_day": "Thứ 4 và Thứ 7 hàng tuần",
+        "collection_day_en": "Every Wednesday and Saturday",
+        "notes": "Gom riêng giấy, nhựa, kim loại trước khi bỏ.",
+        "notes_en": "Sort paper, plastic and metal separately before disposal."
+      },
+      "Rác hữu cơ": {
+        "bin_color": "Thùng màu xanh",
+        "bin_color_en": "Green bin",
+        "collection_day": "Hàng ngày",
+        "collection_day_en": "Daily",
+        "notes": "Đổ vào đúng giờ thu gom rác hữu cơ buổi sáng.",
+        "notes_en": "Dispose during the morning organic waste collection window."
+      },
+      "Rác nguy hại": {
+        "bin_color": "Điểm thu gom riêng",
+        "bin_color_en": "Dedicated collection point",
+        "collection_day": "Theo thông báo của phường",
+        "collection_day_en": "As announced by the local ward",
+        "notes": "Liên hệ tổ dân phố để biết lịch thu gom cụ thể.",
+        "notes_en": "Contact your neighborhood group for the specific collection schedule."
+      },
+      "Rác thông thường": {
+        "bin_color": "Thùng màu xám/đen",
+        "bin_color_en": "Gray/black bin",
+        "collection_day": "Hàng ngày",
+        "collection_day_en": "Daily",
+        "notes": "Đóng gói gọn gàng trước khi bỏ vào thùng.",
+        "notes_en": "Pack neatly before placing it in the bin."
+      }
+    }
+  },
+  "default_rule": {
+    "bin_color": "Thùng màu xám",
+    "bin_color_en": "Gray bin",
+    "collection_day": "Liên hệ đơn vị thu gom địa phương để biết lịch cụ thể",
+    "collection_day_en": "Contact your local collection service for the specific schedule",
+    "notes": "Chưa có dữ liệu quy định cụ thể cho khu vực này.",
+    "notes_en": "No specific regulation data available for this area yet."
+  },
+  "disposal_points": [
+    {
+      "name": "Điểm thu gom tái chế Lê Lợi - Quận 1",
+      "city": "TP. Hồ Chí Minh",
+      "address": "Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh",
+      "lat": 10.7731,
+      "lng": 106.7034,
+      "waste_types": ["Rác tái chế"],
+      "hours": "07:00 - 18:00"
+    },
+    {
+      "name": "Trạm trung chuyển Bình Thạnh",
+      "city": "TP. Hồ Chí Minh",
+      "address": "Điện Biên Phủ, Bình Thạnh, TP. Hồ Chí Minh",
+      "lat": 10.8105,
+      "lng": 106.7091,
+      "waste_types": ["Rác tái chế", "Rác hữu cơ", "Rác thông thường"],
+      "hours": "06:00 - 20:00"
+    },
+    {
+      "name": "Điểm thu gom rác điện tử & nguy hại - Quận 3",
+      "city": "TP. Hồ Chí Minh",
+      "address": "Võ Văn Tần, Quận 3, TP. Hồ Chí Minh",
+      "lat": 10.7843,
+      "lng": 106.6890,
+      "waste_types": ["Rác nguy hại"],
+      "hours": "08:00 - 17:00"
+    },
+    {
+      "name": "Điểm thu gom tái chế Cầu Giấy",
+      "city": "Hà Nội",
+      "address": "Xuân Thủy, Cầu Giấy, Hà Nội",
+      "lat": 21.0368,
+      "lng": 105.7825,
+      "waste_types": ["Rác tái chế"],
+      "hours": "07:00 - 18:00"
+    }
+  ],
+  "collection_schedules": {
+    "Quận 1": {
+      "Rác tái chế": {"schedule": ["Thứ 3", "Thứ 6"], "next_pickup": "Thứ 6 tuần này"},
+      "Rác hữu cơ": {"schedule": ["Hàng ngày"], "next_pickup": "Sáng mai"},
+      "Rác nguy hại": {"schedule": ["Chủ nhật đầu tháng"], "next_pickup": "Chủ nhật đầu tháng sau"},
+      "Rác thông thường": {"schedule": ["Hàng ngày"], "next_pickup": "Tối nay"}
+    },
+    "Bình Thạnh": {
+      "Rác tái chế": {"schedule": ["Thứ 4", "Thứ 7"], "next_pickup": "Thứ 7 tuần này"},
+      "Rác hữu cơ": {"schedule": ["Hàng ngày"], "next_pickup": "Sáng mai"},
+      "Rác nguy hại": {"schedule": ["Chủ nhật đầu tháng"], "next_pickup": "Chủ nhật đầu tháng sau"},
+      "Rác thông thường": {"schedule": ["Hàng ngày"], "next_pickup": "Tối nay"}
+    }
+  },
+  "default_schedule": {
+    "schedule": ["Liên hệ đơn vị thu gom địa phương"],
+    "next_pickup": "Chưa xác định"
+  }
+}

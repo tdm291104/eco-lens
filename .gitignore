@@ -1,0 +1,11 @@
+# Claude Code local settings
+.claude/
+
+# OS
+.DS_Store
+
+# Local-only demo recording (not pushed to GitHub)
+video-demo/
+
+# Local-only submission draft (not pushed to GitHub)
+DEVPOST_SUBMISSION.md
