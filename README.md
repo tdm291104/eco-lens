@@ -43,6 +43,33 @@ awards "green points" to encourage a recycling habit over time.
   AI-generated field between English and Vietnamese, while keeping real
   place names/addresses in their authentic local form.
 
+## How It Works
+
+```mermaid
+flowchart TD
+    U([📷 User uploads photo]) --> H[/Skill Harness/]
+
+    subgraph Pipeline["7-Step LangGraph Pipeline"]
+        direction TB
+        S1["1. Analyze Image<br/>(Vision Agent)"]
+        S2["2. Classify Waste Type<br/>(Classification Agent)"]
+        S3["3. Flag Hazardous Materials<br/>(Classification Agent)"]
+        S4["4. Fetch Local Disposal Rules<br/>(Localization Agent)"]
+        S5["5. Generate Disposal Guide<br/>(Advisory Agent)"]
+        S6["6. Calculate CO₂ Saved<br/>(Scoring Agent)"]
+        S7["7. Award Green Points<br/>(Scoring Agent)"]
+        S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
+    end
+
+    H --> S1
+    S7 --> R{{Result Screen}}
+
+    R --> C["Classification +<br/>Disposal Guide"]
+    R --> P["Nearest Collection<br/>Points"]
+    R --> I["CO₂ Saved /<br/>Green Points"]
+    R --> Ch["Chat Follow-up"]
+```
+
 ## Architecture
 
 EcoLens is built around a **Skill Harness**: every AI capability is an
